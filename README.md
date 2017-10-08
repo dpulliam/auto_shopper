@@ -1,8 +1,6 @@
 # Auto Shopper
 
 This is AutoList clone for Dylan's job application
-[*AutoList*](http://www.autolist.com)
-By: Dylan Pulliam
 
 ## Getting started
 
