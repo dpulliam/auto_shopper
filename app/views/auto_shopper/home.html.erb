@@ -1,0 +1,32 @@
+<% provide(:title, 'Home') %>
+<div class="home">
+  <h1>Lets find you a car</h1>
+
+  <%= form_with scope: :search, url: search_path do |f| %>
+    <div class="form-group">
+      <%= f.label :make %>
+      <%= f.text_field :make, class: 'form-control' %>
+    </div>
+    
+    <div class="form-group">
+      <%= f.label :model %>
+      <%= f.text_field :model, class: 'form-control' %>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <%= f.label :price_min, class: "col-form-label" %>
+        <%= f.number_field :price_min , class: 'form-control' %>
+      </div>
+      <div class="form-group col-md-6">
+        <%= f.label :price_max, class: "col-form-label" %>
+        <%= f.number_field :price_max, class: 'form-control' %>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <%= f.submit "Find Cars", class: 'btn btn-primary btn-lg btn-block' %> 
+    </div>
+  <% end %> 
+</div>
+
